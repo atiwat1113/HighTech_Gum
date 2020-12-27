@@ -1,3 +1,4 @@
+
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -17,49 +18,64 @@ time, mark, audio, video {
     font-size:100%;
     vertical-align:baseline;
     background:transparent;
-    box-sizing: border-box;
+}
+
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
 }
 
 
-
-/* MY CODE */
 *{
     text-decoration: none;
     list-style: none;
 }
 header{
-    height: 550px;  
+    height: 100%;  
     background-image: url('./res/1.jpg');
     background-repeat: no-repeat;
-    background-position: left;
-    background-size: 1950px;
+    background-position: center;
+    background-size: cover;
     
 }
 header nav{
-    height: 50px;
+    height: 100px;
 
 }
 header nav ul{
     display: inline-block;
 }
 header nav ul li{
-    color: grey;
-    display: inline-block;
+    display:inline-block;
     padding:20px;
     font-family: Maven Pro ; 
 }
 header nav ul li a,p{
     color: white;
-    font-size: 20px;
 }
+
+#header-nav {
+    background-color: transparent;
+    border: 0;
+}
+
 #name-afterlogo {
     font-size: 30px;
+    padding-bottom: 10px;
 }
 #desc-after-logo {
     color: darkgrey;
     
 }
-.nav-btn:hover{
+.hover-nav:hover{
     opacity: 0.8;
     transition:0.3s ease; 
 }
@@ -87,18 +103,28 @@ header nav  .logo-nav {
     text-align: center;
     line-height: 50px;
 }
-
+.head p{
+   color: whitesmoke;
+}
 section div h1{
     color: white;
     font-family: maven pro;
     font-size: 40px;
 }
 
-section div p{
-    color: white;
+section.head div p{
+    color: lightgrey;
     font-family: maven pro;
     font-size: 16px;
 
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+    border: 1px solid black;
+}
+
+.navbar-header button.navbar-toggle {
+    margin-top: 45px;
 }
 
 
@@ -107,35 +133,35 @@ section div p{
 main{
     height: fit-content;
     background-color: white;
-    margin:10px;
+    margin:0px 122px;
     display: block;
 }
 main .title{
-    padding:80px 50px 50px 50px;
+    padding:80px 60px;
     text-align: center;
     font-family: maven pro;
 
 }
 main .title h2{
-    font-size: 30px;
+    font-size: 32px;
 }
 main .title section{
-    padding-top: 25px;
+    padding-top: 20px;
     opacity: 0.8;
     padding-bottom: 20px;
     margin-bottom: 20px;
     display: block;
-    line-height: 25px;
+    line-height: 30px;
 }
 .button{
-    margin:50px 5px 50px 5px;
-    width: 150px;
+    margin:50px 5px;
+    width: fit-content;
     text-align: center;
     font-size: 25px;
-    padding:7px 18px 7px 18px;
+    padding:10px 20px;
     color: white;
     background-color: rgba(51, 204, 204,1) ;
-    border-radius: 8px;
+    border-radius: 5px;
     cursor:pointer;
 }
 .button:hover{
@@ -144,15 +170,15 @@ main .title section{
     transition:0.4s ease; 
 }
 .button-transparent{
-    margin:5px;
-    width: 150px;
+    margin:50px 5px;
+    width: fit-content;
     text-align: center;
     font-size: 25px;
-    padding:7px 18px 7px 18px;
+    padding:10px 20px;
     color: darkgrey;
     background-color: rgba(51, 204, 204,0) ;
     border:1px solid grey;
-    border-radius: 8px;
+    border-radius: 5px;
     cursor:pointer;
 }
 .button-transparent:hover{
@@ -164,7 +190,7 @@ main .title section{
 }
 
 main .gallery{
-    padding: 50px;
+    padding:80px 0px;
     text-align: center;
     font-family: maven pro;
 
@@ -175,16 +201,19 @@ main .gallery h2{
 .gallery .menu{
     padding-top: 30px;
     font-size: 15px;
-    opacity: 60%;
-    padding-bottom: 30px;
+    opacity:0.7;
+    padding-bottom: 50px;
 }
 .photo{
-    display: block;
+    display: flex;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    margin:0px auto ;
 }
 
 .title .testimonial{
     column-count: 3;
-    padding-bottom: 10px;
+    padding-bottom: 50px;
     display: flex;
 }
 .title .testimonial p {
@@ -193,13 +222,13 @@ main .gallery h2{
 
 }
 .title .testimonial div{
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
     width:fit-content;
     align-items: flex-start;
 }
 .title .testimonial a{
-   float: left;
+   float:left;
 }
 .call-to-action {
     padding:0px;
@@ -208,24 +237,100 @@ main .gallery h2{
 .call-to-action p{
     color: black;
     font-size: 20px;
-    padding:30px;
+    padding:40px 60px;
     text-align: center;
     font-family: maven pro;
 }
 
+#port-main {
+    background-image: url("./res/portBackground.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#portfolio-header {
+    text-align: center;
+}
+
+#portfolio-header h2 {
+    padding: 20px;
+    margin: 20px auto 10px;
+    font-weight: bold;
+    font-size: 2.2em;
+}
+
+section h3 {
+    padding: 20px;
+    margin: 20px auto 20px;
+    font-size: 2.2em;
+    font-weight: bold;
+}
+
+section hr {
+    color: black;
+    width: 80%;
+    margin: auto ;
+
+}
+
+section > div {
+    margin:20px 0 20px;
+}
+
+#my-profile .profile-title {
+    font-size: 1.4em;
+    padding-top: 10px;
+    font-weight: bold;
+}
 
 
+div.content {
+    padding: 10px 20px 10px;
+    line-height: 30px;
+    font-size: 1.1em;
+}
 
+section div.content p {
+    color:black;
+    font-size: 1.1em;
+}
+
+.content li {
+    list-style: circle;
+}
+
+#my-education .edu-title {
+    padding: 65px 0 10px 10px;
+    font-size: 1.7em;
+    font-weight: bold;
+}
+
+#my-education div p {
+    color: black;
+    padding-left: 10px;
+    font-size: 1.3em;
+}
+
+#my-reward div p {
+    color: black;
+    padding-left: 10px;
+    font-size: 2em;
+}
+
+#my-reward div {
+    text-align: center;
+}
 
 
 .colomn-one-third{
-    width:30%;
+    width:353.33px;
     height:426px;
-    padding:3%;
+    padding:40px 0 0 40px;
     display: inline-block;
 }
 .link-title-div{
-    padding:20px 0px 20px 0px;
+    padding:28px 0px;
 }
 .link-title{
     font-size: 24px;
@@ -235,12 +340,11 @@ main .gallery h2{
     
 }
 .p-div{
-    padding-bottom: 15px;
-    width: 350px;
+    padding-bottom: 10px;
 }
 .colomn-one-third div p {
     color: black;
-    margin:5px 0px 5px 0px;
+    margin:0 0 10px 0;
     font-size: 17px;
     font-family: maven pro;
     line-height: 34px;
@@ -252,33 +356,68 @@ main .gallery h2{
 }
 .wrapper {
     align-self: center;
-    margin:10px auto 50px ;
+    margin:0 0 90px auto;
 }
 .colomn-one-third div img{
-    border-radius: 5px;
+    border-radius: 4px;
 }
+
+
+/* Footer */
 
 footer{
     width: calc(100% - 80px);
-    height: fit-content;
-    padding:30px 30px 30px 30px;
+    height: 300px;
+    padding:40px 40px;
     margin-top:20px;
-    background-color: rgb(75, 73, 73);
-    overflow: auto;
-}
-.wrap-footer{
-    margin-left: 70px;
+    background-color: #111;
+    overflow:hidden;
 }
 footer ul{
-    width: 300px;
+    width: fit-content;
     float:left;
-    padding-left: 10px;
+    padding-left: 20px;
     color: white;
 }
 footer ul li {
     line-height:40px;
-    font-size: 15px;
+    font-size: 20px;
     font-family: maven pro;
     color:white;
 
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #my-profile div:nth-child(1),  #my-profile div:nth-child(2) {
+        margin-bottom: 10px;
+    }
+
+    #my-reward img {
+        height: 450px;
+    }
+}
+
+@media (max-width: 767px) {
+    .nav-bar li {
+        display: block;
+        height: 50px;
+        padding: 0;
+    }
+
+    #nav-list {
+        text-align: center;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: #aaaaaa;
+        font-size: 1.2em;
+    }
+
+    .navbar-collapse {
+        padding: 0;
+    }
+
+    #my-reward img {
+        height: 300px;
+    }
 }
