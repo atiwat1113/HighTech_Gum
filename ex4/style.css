@@ -1,0 +1,325 @@
+* {
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: gray;
+}
+
+#Rectangle3 {
+    position: relative;
+    width: 280px;
+    height: 500px;
+    top: 200px;
+    left:30%;
+    background: #FBFBFB;
+    border-radius: 10px;
+}
+
+#Rectangle2 {
+    position: absolute;
+    width: 280px;
+    height: 60px;
+    top: 27px;
+    background: #F1F1F1;
+    font-family: 'Kanit', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 45px;
+    text-align: right;
+    padding-right: 10px;
+    padding-top: 10px;
+    overflow: auto;
+}
+
+#Rectangle1 {
+    position: absolute;
+    width: 280px;
+    height: 60px;
+    top: 87px;
+    background: #F1F1F1;
+    font-family: 'Kanit', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 45px;
+    text-align: right;
+    padding-right: 10px;
+    overflow: auto;
+}
+
+.ellipse {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.font {
+    font-family: 'Kanit', sans-serif;
+    position: absolute;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 45px;
+    color: #3D3D3D;
+    text-align: center;
+}
+
+.font:hover {
+    cursor: pointer;
+}
+
+#Ellipse1 {
+    top:162px;
+    left:16px;
+    background: #F87328;
+}
+
+#del {
+    font-family: 'Kanit', sans-serif;
+    position: absolute;
+    width: 34px;
+    height: 36px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+    color: #FFFFFF;
+    text-align: center;
+    top:169px;
+    left:23px;
+}
+
+#del:hover {
+    cursor: pointer;
+}
+
+#Ellipse2 {
+    top:162px;
+    left:82px;
+    background: #ECECEC;
+}
+
+#C {
+    width: 18px;
+    height: 45px;
+    top: 164px;
+    left: 97px;
+}
+
+#Ellipse3 {
+    top:162px;
+    left:148px;
+    background: #ECECEC;
+}
+
+#Ellipse4 {
+    top:162px;
+    left:214px;
+    background: #F9E2A6;
+}
+
+#divide {
+    width: 17px;
+    height: 54px;
+    top:162px;
+    left:231px;
+    font-size: 35px;
+}
+
+#Ellipse5 {
+    top:227px;
+    left:16px;
+    background: #ECECEC;
+}
+
+#Ellipse8 {
+    top:227px;
+    left:82px;
+    background: #ECECEC;
+}
+
+#Ellipse7 {
+    top:227px;
+    left:148px;
+    background: #ECECEC;
+}
+
+#Ellipse6 {
+    top:227px;
+    left:214px;
+    background: #CCFCC5;
+}
+
+#Ellipse9 {
+    top:292px;
+    left:16px;
+    background: #ECECEC;
+}
+
+#Ellipse12 {
+    top:292px;
+    left:82px;
+    background: #ECECEC;
+}
+
+#Ellipse11 {
+    top:292px;
+    left:148px;
+    background: #ECECEC;
+}
+
+#Ellipse10 {
+    top:292px;
+    left:214px;
+    background: #FFC9C9;
+}
+
+#Ellipse13 {
+    top:357px;
+    left:16px;
+    background: #ECECEC;
+}
+
+#Ellipse16 {
+    top:357px;
+    left:82px;
+    background: #ECECEC;
+}
+
+#Ellipse15 {
+    top:357px;
+    left:148px;
+    background: #ECECEC;
+}
+
+#Ellipse14 {
+    top:357px;
+    left:214px;
+    background: #B6DAFB;
+}
+
+#Ellipse17 {
+    top:422px;
+    left:16px;
+    background: #ECECEC;
+}
+
+#Ellipse20 {
+    top:422px;
+    left:82px;
+    background: #ECECEC;
+}
+
+#Ellipse19 {
+    top:422px;
+    left:148px;
+    background: #ECECEC;
+}
+
+#Ellipse18 {
+    top:422px;
+    left:214px;
+    background: #ECECEC;
+}
+
+#num7 {
+    width: 15px;
+    height: 45px;
+    top: 229px;
+    left: 33px;
+}
+
+#num8 {
+    width: 18px;
+    height: 45px;
+    top: 229px;
+    left: 99px;
+}
+
+#num9 {
+    width: 18px;
+    height: 45px;
+    top: 229px;
+    left: 165px;
+}
+
+#multiple {
+    width: 17px;
+    height: 45px;
+    top: 227px;
+    left: 231px;
+}
+
+#num4 {
+    width: 17px;
+    height: 45px;
+    top: 294px;
+    left: 34px;
+}
+
+#num5 {
+    width: 16px;
+    height: 45px;
+    top: 294px;
+    left: 100px;
+}
+
+#num6 {
+    width: 18px;
+    height: 45px;
+    top: 294px;
+    left: 164px;
+}
+
+#minus {
+    width: 15px;
+    height: 45px;
+    top: 292px;
+    left: 232px;
+}
+
+#num1 {
+    width: 10px;
+    height: 45px;
+    top: 358px;
+    left: 35px;
+}
+
+#num2 {
+    width: 16px;
+    height: 45px;
+    top: 358px;
+    left: 99px;
+}
+
+#num3 {
+    width: 16px;
+    height: 45px;
+    top: 358px;
+    left: 165px;
+}
+
+#plus {
+    width: 15px;
+    height: 45px;
+    top: 358px;
+    left: 232px;
+}
+
+#num0 {
+    width: 20px;
+    height: 45px;
+    top: 425px;
+    left: 98px;
+}
+
+#equal {
+    width: 15px;
+    height: 45px;
+    top: 423px;
+    left: 232px;
+}
