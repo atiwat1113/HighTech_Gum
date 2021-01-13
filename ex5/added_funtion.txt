@@ -1,0 +1,17 @@
+style.css (ตกแต่งส่วน menu item)
+line 202: 
+	border-radius: 10px;
+	overflow: visible;
+	margin-bottom: 30px;
+line 214:
+	.menu-item-photo img {
+		border-radius: 10px;
+	}
+line 218: 
+	padding-top: 10px;
+	bottom: -10px;
+	right: -10px;
+	width: 45px;
+	height: 45px;
+	font-size: 1.1em;
+	border-radius: 50%;
