@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class="container-fluid">
+            <div id="profile-image">
+                <img src="res/myPic.jpg" alt="myPic" width="350px">
+            </div>
+            <div id="name">
+                <h1>Atiwat Deepo</h1>
+                <p>Computer Engineering Student</p>
+            </div>
+
+            <button type="button" class="change-theme btn btn-dark">Change theme</button>
+        </header>
+
+        <section class="main-content container-fluid">
+            <section class="row">
+                <div class="content-box col-sm-12 col-lg-6">
+                    <a href="#profile-info" data-toggle="collapse">
+                        <div class="title-box">
+                            <div class="title-decorate"></div>
+                            <h2>Profile</h2>
+                        </div>
+                    </a>
+                    <div class="information-box collapse show" id="profile-info">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel blandit lectus. Fusce et dapibus lectus. Morbi vitae libero vel tellus consectetur convallis ac non orci. 
+                            In blandit commodo vulputate. Praesent semper a metus ac luctus. Proin at nulla posuere, rhoncus dolor id, bibendum diam. Suspendisse condimentum velit in pharetra ullamcorper. 
+                            Morbi in turpis ultricies, fringilla enim sit amet, gravida neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="content-box col-sm-12 col-lg-6">
+                    <a href="#skill-info" data-toggle="collapse">
+                        <div class="title-box">
+                            <div class="title-decorate"></div>
+                            <h2>Skills</h2>
+                        </div>
+                    </a>
+                    <div class="information-box collapse show" id="skill-info">
+                        <div class="row">
+                            <div class="col-sm-6" id="hard-skills">
+                                <div class="skill-subtitle">Hard skills</div>   
+                                <ul>
+                                    <li>C C++ Java Python</li>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width:60%"></div>
+                                    </div>
+                                    <li>HTML CSS JS </li>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width:50%"></div>
+                                    </div>
+                                    <li>Bootstrap</li>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width:30%"></div>
+                                    </div>
+                                    <li>Japanese</li>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width:40%"></div>
+                                    </div>
+                                </ul>
+                            </div>
+                            <div class="col-sm-6" id="soft-skills">
+                                <div class="skill-subtitle">Soft skills</div>
+                                <ul>
+                                    <li>Problem-solving</li>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width:80%"></div>
+                                    </div>
+                                    <li>Adaptability</li>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width:75%"></div>
+                                    </div>
+                                    <li>Collaboration</li>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width:80%"></div>
+                                    </div>
+                                    <li>Life-Long Learning</li>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width:65%"></div>
+                                    </div>
+                                </ul>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-box col-sm-12 col-lg-6">
+                    <a href="#edu-info" data-toggle="collapse">
+                        <div class="title-box">
+                            <div class="title-decorate"></div>
+                            <h2>Education</h2>
+                        </div>
+                    </a>
+                    <div class="information-box collapse show" id="edu-info">
+                        <div class="row">
+                            <div class="school col-8">M.Sc. xxxxxxxxxxxxxx</div>
+                            <div class="period col-4">20xx - 20xx</div>
+                            <div class="univ col-12">xxxxxxxxxxxxxxxxx</div>
+                        </div> 
+                        
+                        <div class="row">
+                            <div class="school col-8">B.Sc. Computer Engineering</div>
+                            <div class="period col-4">2019 - 2023</div>
+                            <div class="univ col-12">Chulalongkorn University</div>
+                        </div>                 
+                                              
+                    </div>
+                </div>
+
+                <div class="content-box col-sm-12 col-lg-6">
+                    <a href="#interest-info" data-toggle="collapse">
+                        <div class="title-box">
+                            <div class="title-decorate"></div>
+                            <h2>Experiences</h2>
+                        </div>
+                    </a>
+                    <div class="information-box collapse show" id="exp-info">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel blandit lectus. Fusce et dapibus lectus. Morbi vitae libero vel tellus consectetur convallis ac non orci. 
+                            In blandit commodo vulputate. Praesent semper a metus ac luctus. Proin at nulla posuere, rhoncus dolor id, bibendum diam. Suspendisse condimentum velit in pharetra ullamcorper. 
+                            Morbi in turpis ultricies, fringilla enim sit amet, gravida neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+        </section>
+
+        <footer class="conatainer-fluid">
+            <div class="contact-title">Contact:</div>
+            <ul id="contact">
+                
+                <li><img src="res/marker.png" alt="marker" width="30px">42/6, Ban Len, Bang Pa In, Ayutthaya 13160</li>
+                <li><img src="res/phone.png" alt="phone" width="30px">Tel. +66 901039448</li>
+                <li><img src="res/email.png" alt="email" width="30px">Email: atiwat.deepo@gmail.com</li>
+            </ul>
+        </footer>
+
+
+    </body>
+    <script src="script.js"></script>
+
+</html>
